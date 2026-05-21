@@ -15,6 +15,7 @@ depends: [
   "ocaml"    {>= "5.1.0"}
   "basement" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Sexp type"
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=ef0012752ad6291935e18d8453d93cc7dd9b0deb89d088b59fc8455f1de38803"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

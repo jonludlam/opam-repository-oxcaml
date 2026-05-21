@@ -19,6 +19,7 @@ depends: [
   "dune"            {>= "3.17.0"}
   "js_of_ocaml"     {>= "6.0.1"}
   "js_of_ocaml-ppx" {>= "6.0.1"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -32,4 +33,3 @@ url {
   checksum:
     "sha256=db6f068a6dbff78d9308481611cc439df38023c50b9aa16846beb0c9a28b5c7f"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

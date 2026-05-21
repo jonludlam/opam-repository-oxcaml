@@ -23,6 +23,7 @@ depends: [
   "dune"            {>= "3.17.0"}
   "uri"             {>= "3.0.0"}
   "uri-sexp"        {>= "3.0.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Websocket library for use with cohttp and async"
@@ -43,4 +44,3 @@ url {
   checksum:
     "sha256=96fb52c97a15086d661428db1eaffb19e7d62ba6b8de4edcc670ad8fb43b6959"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

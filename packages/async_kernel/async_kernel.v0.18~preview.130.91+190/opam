@@ -22,6 +22,7 @@ depends: [
   "sexplib"       {= "v0.18~preview.130.91+190"}
   "unique"        {= "v0.18~preview.130.91+190"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Monadic concurrency library"
@@ -37,4 +38,3 @@ url {
   checksum:
     "sha256=820bd47fe1d898e5fb05e45d9c7bfa9f5bacdf275e45ae5b1d39db282b35c33b"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -29,6 +29,7 @@ depends: [
   "httpaf"                       {>= "0.7.1"}
   "jingoo"                       {>= "1.4.4" & < "1.5.0"}
   "uri"                          {>= "3.0.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An OpenAPI 3 to OCaml client generator."
@@ -41,4 +42,3 @@ url {
   checksum:
     "sha256=b922e4b0566f03100236819b525691a213da49c455031ab54d8707602a7a6ee6"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

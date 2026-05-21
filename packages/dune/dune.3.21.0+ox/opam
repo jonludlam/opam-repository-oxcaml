@@ -47,6 +47,7 @@ depends: [
   "utop"                 {with-dev-setup & >= "2.6.0" & os != "win32"}
   "melange"              {with-dev-setup & >= "5.1.0-51" & os != "win32"}
   "uutf"                 {with-dev-setup}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 conflicts: [
   "merlin"              {< "3.4.0"}
@@ -56,7 +57,6 @@ conflicts: [
   "dune-release"        {< "2.0.0"}
   "js_of_ocaml-compiler" {< "3.6.0"}
   "jbuilder"            {= "transition"}
-  "oxcaml-compiler" {> "5.2.0minus25"}
 ]
 build: [
   ["ocaml" "boot/bootstrap.ml" "-j" jobs]

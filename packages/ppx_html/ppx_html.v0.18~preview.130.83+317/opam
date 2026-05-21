@@ -27,6 +27,7 @@ depends: [
   "js_of_ocaml-ppx"          {>= "6.0.1"}
   "ocaml-compiler-libs"      {>= "v0.17.0"}
   "ppxlib"                   {>= "0.33.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -40,4 +41,3 @@ url {
   checksum:
     "sha256=725aee02151f7beec170b8d2e092376399dd9140c6fe2add9efbe92d86915121"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

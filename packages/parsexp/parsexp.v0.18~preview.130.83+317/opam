@@ -18,6 +18,7 @@ depends: [
   "sexplib0"      {= "v0.18~preview.130.83+317"}
   "unique"        {= "v0.18~preview.130.83+317"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "S-expression parsing library"
@@ -48,4 +49,3 @@ url {
   checksum:
     "sha256=e57b04822d7247e0324e3ec0bf82bcffdab577c7ec57d1aa84a2ef35630d577e"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

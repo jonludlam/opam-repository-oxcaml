@@ -19,6 +19,7 @@ depends: [
   "ppx_sexp_message" {= "v0.18~preview.130.91+190"}
   "ppx_sexp_value"   {= "v0.18~preview.130.91+190"}
   "dune"             {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -36,4 +37,3 @@ url {
   checksum:
     "sha256=5c2ff0241c2345ddcb5035479dc79c1440ffb0fd928def6e7ea9aff3d8841f3e"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

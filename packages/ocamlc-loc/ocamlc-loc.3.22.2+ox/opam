@@ -15,6 +15,7 @@ depends: [
   "ocaml" {>= "4.08.0"}
   "dyn" {= version}
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 conflicts: [
   "ocaml-lsp-server" {< "1.15.0"}

@@ -16,6 +16,7 @@ depends: [
   "core"         {= "v0.18~preview.130.83+317"}
   "ppx_jane"     {= "v0.18~preview.130.83+317"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Small library for asynchronous pushback"
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=94e93b3110dcfa11a3acf09505b0e7f20fc6eef0177d7635476187d3f6853624"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

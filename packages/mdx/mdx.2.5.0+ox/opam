@@ -35,10 +35,10 @@ depends: [
   "result"
   "alcotest"      {with-test}
   "odoc"          {with-doc}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 conflicts: [
   "result" {< "1.5"}
-  "oxcaml-compiler" {> "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}

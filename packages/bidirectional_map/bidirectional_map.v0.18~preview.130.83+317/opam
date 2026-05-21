@@ -13,6 +13,7 @@ build: [
 depends: [
   "ocaml" {>= "5.1.0"}
   "dune"  {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for bidirectional maps and multimaps."
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=4c042b82eab7bf24323d294c462c856c53a621d8848cad6d21bcec50da4cbd10"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

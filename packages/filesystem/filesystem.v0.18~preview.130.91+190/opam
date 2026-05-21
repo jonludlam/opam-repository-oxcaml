@@ -21,6 +21,7 @@ depends: [
   "file_path"    {= "v0.18~preview.130.91+190"}
   "ppx_jane"     {= "v0.18~preview.130.91+190"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for filesystem operations with the file_path library."
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=5e70b0e471d2f80964c5e6b724d23db5a76b1c98a4a7310ff86833928205d81e"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

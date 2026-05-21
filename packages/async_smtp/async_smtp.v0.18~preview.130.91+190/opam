@@ -37,6 +37,7 @@ depends: [
   "base64"         {>= "3.4.0"}
   "cryptokit"      {>= "1.16" & < "1.17"}
   "dune"           {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "SMTP client and server"
@@ -48,4 +49,3 @@ url {
   checksum:
     "sha256=6731c83805c2795b4af2125d94c65119b60f74a4b9f0a916283f254e7edb3ca3"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

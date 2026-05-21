@@ -26,6 +26,7 @@ depends: [
   "unboxed"                  {= "v0.18~preview.130.91+190"}
   "vec"                      {= "v0.18~preview.130.91+190"}
   "dune"                     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Hardcaml 1D Convolution Demo"
@@ -42,4 +43,3 @@ url {
   checksum:
     "sha256=a2742f49212dd615fa6f5ebaa084d1c2141fe1189e3ab6d389c68b79bc4a9f60"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

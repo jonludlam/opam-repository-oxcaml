@@ -42,6 +42,7 @@ depends: [
   "uopt"                {= "v0.18~preview.130.83+317"}
   "variantslib"         {= "v0.18~preview.130.83+317"}
   "dune"                {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Industrial strength alternative to OCaml's standard library"
@@ -58,4 +59,3 @@ url {
   checksum:
     "sha256=b668eefa67ae1e612bca02d6a868420ead5df511c1ac9edbd5378d80ab77f3f8"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

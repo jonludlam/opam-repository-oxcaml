@@ -15,6 +15,7 @@ depends: [
   "core"     {= "v0.18~preview.130.83+317"}
   "ppx_jane" {= "v0.18~preview.130.83+317"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A splay tree implementation"
@@ -37,4 +38,3 @@ url {
   checksum:
     "sha256=a35662624ad342ac23f2831142a0c450ca7db7c079646f921728b09833a4d373"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

@@ -20,6 +20,7 @@ depends: [
   "pp" {>= "2.0.0"}
   "top-closure" {= version}
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

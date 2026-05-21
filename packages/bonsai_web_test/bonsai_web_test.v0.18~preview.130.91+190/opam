@@ -50,6 +50,7 @@ depends: [
   "lambdasoup"                  {>= "0.6.3"}
   "re"                          {>= "1.14.0"}
   "uri"                         {>= "3.0.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for testing dynamic bonsai webapps, using Js_of_ocaml"
@@ -64,4 +65,3 @@ url {
   checksum:
     "sha256=e300f1781080f836f718db793ef5074ba030e9d1bd640cdcb46f8e8ec228be0b"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

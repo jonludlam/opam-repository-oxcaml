@@ -24,6 +24,7 @@ depends: [
   "ocaml" {>= "4.08"}
   "odoc"  {with-doc & <= "3.0.0"}
   "yojson" {>= "2.0.0" & < "3.0.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -40,6 +41,3 @@ url {
   checksum:
     "sha256=ca1ff03da86fed33fedaa655fcfa8ce8f200e6b7c94fef94363587d45aad6d61"
 }
-conflicts: [
-  "oxcaml-compiler" {> "5.2.0minus25"}
-]

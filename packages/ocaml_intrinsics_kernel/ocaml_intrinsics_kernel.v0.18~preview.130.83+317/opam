@@ -13,6 +13,7 @@ build: [
 depends: [
   "ocaml" {>= "5.1.0"}
   "dune"  {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Intrinsics"
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=726da1173882de8d86b166857fd915f6c42cbfca610b9ac9f1b33e1e4c3cad08"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

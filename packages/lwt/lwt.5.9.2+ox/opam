@@ -27,6 +27,7 @@ depends: [
   "odoc"             {with-doc & >= "2.3"}
   "dune-configurator"
   "ocplib-endian"
+  "oxcaml-compiler"
 ]
 depopts: ["base-threads" "base-unix" "conf-libev"]
 build: [

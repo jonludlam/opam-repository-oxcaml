@@ -30,6 +30,7 @@ depends: [
   "uutf"               {>= "1.0.1"}
   "ocaml-syntax-shims"
   "odoc"               {with-doc}
+  "oxcaml-compiler"
 ]
 conflicts: [
   "result" {< "1.5"}

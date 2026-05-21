@@ -18,6 +18,7 @@ depends: [
   "core_unix"   {= "v0.18~preview.130.91+190"}
   "ppx_jane"    {= "v0.18~preview.130.91+190"}
   "dune"        {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for running the fzf command line tool"
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=b799784f2a3624a5be80efa20a06e9152aa615af626779e9f239a071d58de9ed"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -17,6 +17,7 @@ depends: [
   "base"     {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "S-expression symbolic automaton library"
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=55ba2116df7ce7e6eab09ac8868a5360cda7f4089764d817921c1d941c87dd8b"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -20,6 +20,7 @@ depends: [
   "ppx_jane"   {= "v0.18~preview.130.91+190"}
   "dune"       {>= "3.17.0"}
   "inotify"    {>= "2.4.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Async wrapper for inotify"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=bc7ac4dcc04b365c5ebab67179bdd99b6cecf41100c081f31a475f27a339bc85"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -30,12 +30,12 @@ depends: [
   "dune"                {>= "3.17.0"}
   "dune-configurator"
   "ocaml-compiler-libs" {>= "v0.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 depopts: ["libtorch"]
 available: arch != "arm32" & arch != "x86_32"
 conflicts: [
   "libtorch" {< "2.3.0" | >= "2.4.0"}
-  "oxcaml-compiler" {< "5.2.0minus31"}
 ]
 synopsis: "Torch bindings for OCaml"
 description: """

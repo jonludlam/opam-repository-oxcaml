@@ -15,6 +15,7 @@ depends: [
   "base"     {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Provides a let-syntax for continuation-passing style."
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=0f02ecda5b1391ad9a3ef3bf6feec73d6a3d93726763c0535acd8f98feae8c9b"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

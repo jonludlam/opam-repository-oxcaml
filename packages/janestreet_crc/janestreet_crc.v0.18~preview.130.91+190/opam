@@ -17,6 +17,7 @@ depends: [
   "core_kernel" {= "v0.18~preview.130.91+190"}
   "ppx_jane"    {= "v0.18~preview.130.91+190"}
   "dune"        {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Calculate CRC32 checksums"
@@ -29,4 +30,3 @@ url {
   checksum:
     "sha256=dbb757cdda785d585c3871f05d26247364929a70c9e93b8986a627a575613586"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

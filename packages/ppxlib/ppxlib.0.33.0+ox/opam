@@ -33,13 +33,13 @@ depends: [
   "re"                  {with-test & >= "1.9.0"}
   "cinaps"              {with-test & >= "v0.12.1"}
   "odoc"                {with-doc}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 conflicts: [
   "ocaml-migrate-parsetree" {< "2.0.0"}
   "ocaml-base-compiler" {= "5.1.0~alpha1"}
   "ocaml-variants" {= "5.1.0~alpha1+options"}
   "base-effects"
-  "oxcaml-compiler" {> "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}

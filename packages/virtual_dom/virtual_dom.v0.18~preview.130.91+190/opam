@@ -29,6 +29,7 @@ depends: [
   "lambdasoup"      {>= "0.6.3"}
   "tyxml"           {>= "4.3.0"}
   "uri"             {>= "3.0.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "OCaml bindings for the virtual-dom library"
@@ -42,4 +43,3 @@ url {
   checksum:
     "sha256=7b591f21a66f5733ac7523a2da2df6b0532ab98f8ef4378ec62df9f674241daa"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

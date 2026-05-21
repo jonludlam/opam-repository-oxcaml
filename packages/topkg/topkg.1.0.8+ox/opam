@@ -41,6 +41,7 @@ depends: [
   "ocaml"      {>= "4.08.0"}
   "ocamlfind"  {build & >= "1.6.1"}
   "ocamlbuild"
+  "oxcaml-compiler"
 ]
 build: ["ocaml" "pkg/pkg.ml" "build" "--pkg-name" name "--dev-pkg" "%{dev}%"]
 dev-repo: "git+https://erratique.ch/repos/topkg.git"

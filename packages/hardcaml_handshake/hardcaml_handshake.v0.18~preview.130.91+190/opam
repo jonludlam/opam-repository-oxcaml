@@ -18,6 +18,7 @@ depends: [
   "ppx_hardcaml" {= "v0.18~preview.130.91+190"}
   "ppx_jane"     {= "v0.18~preview.130.91+190"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Hardcaml Handshake"
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=12b9bf0eb828ccf5c0c1403e895cb0ba7b104f1f3295f1a3ccaf06a178a3ca51"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

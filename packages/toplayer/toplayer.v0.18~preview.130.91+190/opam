@@ -24,6 +24,7 @@ depends: [
   "gen_js_api"        {>= "1.1.2"}
   "js_of_ocaml"       {>= "6.0.1"}
   "js_of_ocaml-ppx"   {>= "6.0.1"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -37,4 +38,3 @@ url {
   checksum:
     "sha256=fdfbbcd87d1cc7bfaaadb2b0bbcae9638f852003717e81b6304d62fec1a7672d"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -14,6 +14,7 @@ build: [
 depends: [
   "ocaml" {>= "5.1.0"}
   "dune"  {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Javascripts stubs for the Zarith library"
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=65377c3abb5cd0e809495ed0871834e2f983bfc1e54a076c2f86a8c8eb1722fe"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

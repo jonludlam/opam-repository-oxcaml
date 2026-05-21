@@ -21,6 +21,7 @@ depends: [
   "dune"         {>= "3.17.0"}
   "uri"          {>= "3.0.0"}
   "uri-sexp"     {>= "3.0.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for easily creating a cohttp handler for static files"
@@ -34,4 +35,3 @@ url {
   checksum:
     "sha256=6729fdbf9e76d73dc86e953096d14934ceeb75022cf2000d9d1217a1f0977c0a"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

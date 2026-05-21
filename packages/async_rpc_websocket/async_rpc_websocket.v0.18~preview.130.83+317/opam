@@ -23,6 +23,7 @@ depends: [
   "conduit-async"
   "dune"                   {>= "3.17.0"}
   "uri"                    {>= "3.0.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Library to serve and dispatch Async RPCs over websockets"
@@ -43,4 +44,3 @@ url {
   checksum:
     "sha256=c9aa1f1e35cf6311d7c2f947f8d34d755795283d14116bdf721240128edaa5f1"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

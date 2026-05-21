@@ -16,6 +16,7 @@ depends: [
   "sexplib0" {= "v0.18~preview.130.83+317"}
   "dune"     {>= "3.17.0"}
   "num"
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Library for serializing OCaml values to and from S-expressions"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=c5c227fe3d99dc16f102a18c00fe9a0f5534e21a02fa25418094bfa7fbd05c91"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

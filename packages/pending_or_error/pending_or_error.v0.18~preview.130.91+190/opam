@@ -17,6 +17,7 @@ depends: [
   "ppx_diff" {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A type useful for representing asynchronous results."
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=4f7f64f71f007c132416e80fc25f7c4c6aac37fd5cc2ac1c405581243e324e2b"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

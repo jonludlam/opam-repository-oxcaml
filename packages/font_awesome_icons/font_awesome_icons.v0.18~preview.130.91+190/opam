@@ -19,6 +19,7 @@ depends: [
   "core_unix"  {= "v0.18~preview.130.91+190"}
   "ppx_jane"   {= "v0.18~preview.130.91+190"}
   "dune"       {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An OCaml library for Font-Awesome SVG icons"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=ec6205747afcdceb64d0a1ecf3257a80aad3b1ee55a6c8f6ad99cdf82f8f65ac"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

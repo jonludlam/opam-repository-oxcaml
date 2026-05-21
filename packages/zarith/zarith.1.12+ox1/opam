@@ -16,6 +16,7 @@ depends: [
   "ocaml"     {>= "4.04.0"}
   "ocamlfind"
   "conf-gmp"
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 build: [
   ["./configure"] {os != "openbsd" & os != "freebsd" & os != "macos"}
@@ -73,7 +74,4 @@ extra-files: [
     "zarith-portability.patch"
     "sha256=71fff9a702cf3e927782ee8591a26e0c3b7359bf3ce60d1868b0a49e1a7c11e3"
   ]
-]
-conflicts: [
-  "oxcaml-compiler" {< "5.2.0minus31"}
 ]

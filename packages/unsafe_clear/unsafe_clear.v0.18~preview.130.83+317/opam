@@ -17,6 +17,7 @@ depends: [
   "expect_test_helpers_core" {= "v0.18~preview.130.83+317"}
   "ppx_jane"                 {= "v0.18~preview.130.83+317"}
   "dune"                     {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=68c3798ba8eec017f62af2fef7a9d6e5f7f8c262de8f7ee10b0195d4269b6e68"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

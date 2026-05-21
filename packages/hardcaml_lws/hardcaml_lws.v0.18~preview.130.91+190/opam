@@ -23,6 +23,7 @@ depends: [
   "unique"                    {= "v0.18~preview.130.91+190"}
   "vec"                       {= "v0.18~preview.130.91+190"}
   "dune"                      {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Lightweight scheduler for Hardcaml testbenches"
@@ -39,4 +40,3 @@ url {
   checksum:
     "sha256=c18fd669802caca24b10e3b6e430558a9287c3e3abe8cb08ebaaf1d78aaabc0f"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

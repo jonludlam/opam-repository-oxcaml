@@ -20,6 +20,7 @@ depends: [
   "ppx_inline_test"  {= "v0.18~preview.130.91+190"}
   "ppx_sexp_message" {= "v0.18~preview.130.91+190"}
   "dune"             {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "PRNG that can be split into independent streams"
@@ -39,4 +40,3 @@ url {
   checksum:
     "sha256=63ea9c28028082ba258a8538475c19db479b4f696b2157fc39ac4309a3c53a55"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

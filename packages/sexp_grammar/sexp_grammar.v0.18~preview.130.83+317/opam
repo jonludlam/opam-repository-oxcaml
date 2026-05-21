@@ -28,6 +28,7 @@ depends: [
   "dune"             {>= "3.17.0"}
   "ppxlib"           {>= "0.33.0"}
   "zarith"           {>= "1.12"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Sexp grammar helpers"
@@ -40,4 +41,3 @@ url {
   checksum:
     "sha256=d90007cd890b3ce57cf139a9e3d692636559bb4f0fe9f98e6a4e8ae82f119c38"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

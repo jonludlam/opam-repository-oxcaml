@@ -20,6 +20,7 @@ depends: [
   "expect_test_helpers_core" {= "v0.18~preview.130.91+190"}
   "ppx_jane"                 {= "v0.18~preview.130.91+190"}
   "dune"                     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library that wraps the Mercurial command line interface"
@@ -32,4 +33,3 @@ url {
   checksum:
     "sha256=1ef8a66368bfb991e8c92603feb190efccc09ade81d50cfea08468f3a6374d70"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

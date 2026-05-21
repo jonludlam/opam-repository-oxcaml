@@ -17,6 +17,7 @@ depends: [
   "parsexp"  {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Quickcheck helpers for strings parsing to sexps"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=9b18121116a3b97e64362cb51ddb99d65ae579133798a523f770118c03787a48"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

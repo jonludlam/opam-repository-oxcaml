@@ -17,6 +17,7 @@ depends: [
   "core"     {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Diff library using Bram Cohen's patience diff algorithm"
@@ -28,4 +29,3 @@ url {
   checksum:
     "sha256=1341bac3e30a57126fc64ad7931bcfcf76e16c264d0ad040ce4df0e8fb8ce421"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

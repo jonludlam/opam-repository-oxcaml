@@ -16,6 +16,7 @@ depends: [
   "ppx_optcomp"   {= "v0.18~preview.130.91+190"}
   "ppx_sexp_conv" {= "v0.18~preview.130.91+190"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Bindings to the posix *at functions"
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=02c71181e7cc60618ba3ff89f0f4698a18ec7cb383e86ffe34bb6a0f9e625d48"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

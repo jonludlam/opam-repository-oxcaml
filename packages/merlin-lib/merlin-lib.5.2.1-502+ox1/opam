@@ -19,6 +19,7 @@ depends: [
   "menhir"    {dev & >= "20201216" & <= "20240715"}
   "menhirLib" {dev & >= "20201216" & <= "20240715"}
   "menhirSdk" {dev & >= "20201216" & <= "20240715"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -32,6 +33,3 @@ x-reason-for-archiving: ["maintenance-intent"]
 url {
   src: "git+https://github.com/oxcaml/merlin.git#merge-5.2.0minus-31-oxcaml"
 }
-conflicts: [
-  "oxcaml-compiler" {< "5.2.0minus31"}
-]

@@ -18,6 +18,7 @@ depends: [
   "ppx_jane"      {= "v0.18~preview.130.83+317"}
   "ppx_optcomp"   {= "v0.18~preview.130.83+317"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Accessors for Core types, for use with the Accessor library"
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=635552baefd38b2b75593f81860498ebb2c68352e6504a332c9e276e60367305"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

@@ -19,6 +19,7 @@ depends: [
   "ppx_fuelproof" {= "v0.18~preview.130.91+190"}
   "ppx_jane"      {= "v0.18~preview.130.91+190"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Portable lock-free hash table for OxCaml"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=9c27f41f1587787048ad91499da8ca5935d1aed843134cd349b98f10e64cfe9f"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

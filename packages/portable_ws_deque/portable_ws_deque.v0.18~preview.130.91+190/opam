@@ -18,6 +18,7 @@ depends: [
   "portable" {= "v0.18~preview.130.91+190"}
   "uopt"     {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Portable work-stealing deque for OxCaml"
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=aedfb1abfa50b662b7f4154d59606d8c3779c577cbe68158a73731abe159ba54"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

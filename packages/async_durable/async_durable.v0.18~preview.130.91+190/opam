@@ -19,6 +19,7 @@ depends: [
   "core_kernel"      {= "v0.18~preview.130.91+190"}
   "ppx_jane"         {= "v0.18~preview.130.91+190"}
   "dune"             {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Durable connections for use with async"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=529d7c982a7503dc1c5a77d44ba5559345f8b8ed9e24e6f08b4d9ab8154e03dc"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

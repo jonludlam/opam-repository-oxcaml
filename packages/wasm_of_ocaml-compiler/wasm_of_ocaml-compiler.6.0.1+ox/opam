@@ -29,12 +29,12 @@ depends: [
   "yojson"       {>= "2.1"}
   "binaryen-bin"
   "odoc"         {with-doc}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 depopts: ["ocamlfind"]
 conflicts: [
   "ocamlfind" {< "1.5.1"}
   "js_of_ocaml" {< "3.0"}
-  "oxcaml-compiler" {> "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}

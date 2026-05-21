@@ -17,6 +17,7 @@ depends: [
   "core_kernel" {= "v0.18~preview.130.91+190"}
   "ppx_jane"    {= "v0.18~preview.130.91+190"}
   "dune"        {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 synopsis:
   "A library for parsing CPU capabilities out of the `cpuid` instruction."
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=2aac7a9c85e2f695df72e4cd90f8d83ec28e3f6602601d1534867dc704ca07b9"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -17,6 +17,7 @@ depends: [
   "bigstringaf"
   "dune"        {>= "3.17.0"}
   "faraday"     {>= "0.8.1"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=3055457af3a3505f9cc21d5f14618a9e8bc54a25cfa08f1370af3956fe9ade88"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

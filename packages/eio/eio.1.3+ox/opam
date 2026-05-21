@@ -23,6 +23,7 @@ depends: [
   "mdx" {>= "2.4.1" & with-test}
   "dscheck" {>= "0.1.0" & with-test}
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 conflicts: [
   "seq" {< "0.3"}

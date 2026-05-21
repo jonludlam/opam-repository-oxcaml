@@ -19,6 +19,7 @@ depends: [
   "menhir"    {dev & >= "20201216" & <= "20240715"}
   "menhirLib" {dev & >= "20201216" & <= "20240715"}
   "menhirSdk" {dev & >= "20201216" & <= "20240715"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -35,6 +36,3 @@ url {
   checksum:
     "sha256=f7b76956485c97f17829c7f9aa8a99ba0d5956b0f0cbcde48b5180c80727bc8a"
 }
-conflicts: [
-  "oxcaml-compiler" {> "5.2.0minus25"}
-]

@@ -19,6 +19,7 @@ depends: [
   "ppx_jane"         {= "v0.18~preview.130.83+317"}
   "cryptokit"        {>= "1.16" & < "1.17"}
   "dune"             {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library that implements the websocket protocol on top of Async"
@@ -32,4 +33,3 @@ url {
   checksum:
     "sha256=68438bca69902013893840739539a2d82595fdcaeaa06411d83267d8d75deaf2"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

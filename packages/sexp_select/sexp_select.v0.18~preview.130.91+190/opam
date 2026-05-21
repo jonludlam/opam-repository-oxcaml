@@ -18,6 +18,7 @@ depends: [
   "parsexp"     {= "v0.18~preview.130.91+190"}
   "ppx_jane"    {= "v0.18~preview.130.91+190"}
   "dune"        {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library to use CSS-style selectors to traverse sexp trees"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=9d1f41e250f6bd98b684b6a07bb5a0a8583111aeb5692f54d96b8da8fd3e04dc"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

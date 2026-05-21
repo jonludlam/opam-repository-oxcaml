@@ -19,6 +19,7 @@ depends: [
   "core_unix"   {= "v0.18~preview.130.91+190"}
   "ppx_jane"    {= "v0.18~preview.130.91+190"}
   "dune"        {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Monadic concurrency library"
@@ -34,4 +35,3 @@ url {
   checksum:
     "sha256=2b4545d5f5c7aed06bbedc2f70515e2a9fe7c64e763ee8e67c3fceb0dcd1b450"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

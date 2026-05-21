@@ -32,6 +32,7 @@ depends: [
   "ocamlformat-rpc-lib" {with-test & = version}
   "re"                  {>= "1.10.3"}
   "odoc"                {with-doc}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -55,6 +56,3 @@ url {
   checksum:
     "sha256=3f251df04145372d68b8f3f592572761e7db68e382355828479c9baf3bb60a5f"
 }
-conflicts: [
-  "oxcaml-compiler" {> "5.2.0minus25"}
-]

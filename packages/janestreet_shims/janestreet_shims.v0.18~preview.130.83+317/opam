@@ -13,6 +13,7 @@ build: [
 depends: [
   "ocaml" {>= "5.1.0"}
   "dune"  {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Shims for Jane Street compiler extensions"
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=b80046d706645450677d5870e0b3b1dd277769e099f01e16f6cafd1307ddecf7"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

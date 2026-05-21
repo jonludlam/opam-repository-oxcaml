@@ -19,6 +19,7 @@ depends: [
   "ppx_accessor"  {= "v0.18~preview.130.91+190"}
   "ppx_jane"      {= "v0.18~preview.130.91+190"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Accessors for Async types, for use with the Accessor library"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=b60654b7ea4029ff9a548106f504b52180fba061979c72a0697965331f3ef882"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -19,6 +19,7 @@ depends: [
   "ppx_hardcaml"      {= "v0.18~preview.130.91+190"}
   "ppx_jane"          {= "v0.18~preview.130.91+190"}
   "dune"              {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Hardcaml wrappers for Xilinx memory primitives"
@@ -35,4 +36,3 @@ url {
   checksum:
     "sha256=ebed7a4421407ec3f1a4e6c77ffe47a8fec75cb38acdde0d73e9a79695f43584"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

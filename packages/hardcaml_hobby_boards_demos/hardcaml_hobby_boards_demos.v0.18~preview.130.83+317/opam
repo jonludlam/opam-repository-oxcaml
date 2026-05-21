@@ -14,6 +14,7 @@ build: [
 depends: [
   "ocaml" {>= "5.1.0"}
   "dune"  {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Example projects using hardcaml_hobby_boards library."
@@ -26,4 +27,3 @@ url {
   checksum:
     "sha256=e7d1ea7025d804b53bd8b24082982bfbf6d7768ecaf701cda20ae59b11b3f713"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

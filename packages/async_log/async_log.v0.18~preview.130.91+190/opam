@@ -20,6 +20,7 @@ depends: [
   "core_unix"    {= "v0.18~preview.130.91+190"}
   "ppx_jane"     {= "v0.18~preview.130.91+190"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Logging library built on top of Async_unix"
@@ -35,4 +36,3 @@ url {
   checksum:
     "sha256=a24c42899600a59fce649a24ab4d18590b45f73c2aa1f237c47fd6fbebb2bbd8"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

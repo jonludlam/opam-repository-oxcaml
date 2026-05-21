@@ -20,6 +20,7 @@ depends: [
   "ppx_jane"         {= "v0.18~preview.130.83+317"}
   "rpc_parallel"     {= "v0.18~preview.130.83+317"}
   "dune"             {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An opinionated asynchronous stream-processing framework"
@@ -37,4 +38,3 @@ url {
   checksum:
     "sha256=1185e0d2586e43eda8a77297e07e055bd84cc9ddbe50046bf540cf96dcc57cbf"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

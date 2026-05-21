@@ -30,6 +30,7 @@ depends: [
   "angstrom"    {>= "0.15.0"}
   "dune"        {>= "3.17.0"}
   "uri"         {>= "3.0.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "S-expression swiss knife"
@@ -44,4 +45,3 @@ url {
   checksum:
     "sha256=af427d04b2d329552eb84f463d28bad1183a2091e239a03fd119c8cc26a5a052"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

@@ -14,6 +14,7 @@ depends: [
   "ocaml" {>= "5.1.0"}
   "dune"  {>= "3.17.0"}
   "owee"  {>= "0.4"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 synopsis: "USDT probes for OCaml: command line tool"
 description: """
@@ -28,4 +29,3 @@ url {
   checksum:
     "sha256=ca9cb3fb7611f74f8aa24f383119cd1938d61d330094a17dfc05ad3479f1a5d4"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

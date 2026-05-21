@@ -16,6 +16,7 @@ depends: [
   "core"         {= "v0.18~preview.130.91+190"}
   "ppx_template" {= "v0.18~preview.130.91+190"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An identifier for a user"
@@ -28,4 +29,3 @@ url {
   checksum:
     "sha256=46669611bc95bb085298b264860179084f92a80e603b04b9e7a3ede01a527c57"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -23,6 +23,7 @@ depends: [
   "ppx_template"       {= "v0.18~preview.130.91+190"}
   "ppx_variants_conv"  {= "v0.18~preview.130.91+190"}
   "dune"               {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A binary protocol generator"
@@ -38,4 +39,3 @@ url {
   checksum:
     "sha256=87859ab642722e823e9aca17b468c954d0d970b36c73d7bdab3b576d5672c134"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

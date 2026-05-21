@@ -16,6 +16,7 @@ depends: [
   "ppx_jane" {= "v0.18~preview.130.83+317"}
   "sexplib"  {= "v0.18~preview.130.83+317"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A Core.Map with a notion of insertion order."
@@ -28,4 +29,3 @@ url {
   checksum:
     "sha256=dada3d8913e47084a32820d5d3093178d066486a5fe277543137c3f56e5e4767"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

@@ -24,6 +24,7 @@ depends: [
   "cryptokit"   {>= "1.16" & < "1.17"}
   "dune"        {>= "3.17.0"}
   "magic-mime"
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "E-mail message parser"
@@ -35,4 +36,3 @@ url {
   checksum:
     "sha256=6180fb6cc7a24aa72566480106fbba4407d2537c3454613f16e7340fceeed645"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

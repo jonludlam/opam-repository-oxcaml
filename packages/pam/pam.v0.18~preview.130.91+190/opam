@@ -16,6 +16,7 @@ depends: [
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "conf-pam"
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "OCaml bindings for the Linux-PAM library"
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=1361a27ec6c49149a57d8e62d0e99eb51aabbe1dc81b1e8a201e104e19c0a5be"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

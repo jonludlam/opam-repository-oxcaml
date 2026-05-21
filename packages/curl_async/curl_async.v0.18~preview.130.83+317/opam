@@ -18,6 +18,7 @@ depends: [
   "ppx_jane"  {= "v0.18~preview.130.83+317"}
   "curl"
   "dune"      {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Curl for Async applications"
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=6c334e40e7a5df5bbff5e8bd5dd74f9f03c453ae420ca5333c7f4050869078bf"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

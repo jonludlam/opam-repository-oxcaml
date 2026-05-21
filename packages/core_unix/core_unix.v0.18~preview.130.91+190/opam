@@ -28,6 +28,7 @@ depends: [
   "base-threads"
   "dune"                     {>= "3.17.0"}
   "spawn"                    {>= "v0.15.1"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Unix-specific portions of Core"
@@ -41,4 +42,3 @@ url {
   checksum:
     "sha256=51269a6ee8bedaac22868ad47d08b9dd77f521dc41bab4c3b66033a2480c13c4"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

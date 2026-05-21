@@ -16,6 +16,7 @@ depends: [
   "lwt" {>= "5.6.0"}
   "base-unix"
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

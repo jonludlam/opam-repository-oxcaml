@@ -21,6 +21,7 @@ depends: [
   "stdio"       {= "v0.18~preview.130.83+317"}
   "dune"        {>= "3.17.0"}
   "ocamlfind"   {>= "1.7.2"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Shared backend for setting up toplevels"
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=9079a3861e989cbcad689623f4068b1393b201812262ac545dd378d08edd3692"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

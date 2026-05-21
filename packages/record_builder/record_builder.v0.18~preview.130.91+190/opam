@@ -16,6 +16,7 @@ depends: [
   "base"     {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library which provides traversal of records with an applicative"
@@ -32,4 +33,3 @@ url {
   checksum:
     "sha256=97ef4f4c6994d30d83bf38b5e5b509855f5a531f44a51b3bcdf97b9c5ce358ef"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

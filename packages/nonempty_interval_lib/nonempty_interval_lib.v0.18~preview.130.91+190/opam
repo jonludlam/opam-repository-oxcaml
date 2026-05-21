@@ -17,6 +17,7 @@ depends: [
   "core_unix" {= "v0.18~preview.130.91+190"}
   "ppx_jane"  {= "v0.18~preview.130.91+190"}
   "dune"      {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An Interval_lib.Interval but with empty intervals disallowed."
@@ -29,4 +30,3 @@ url {
   checksum:
     "sha256=ab47cbff8291cd0ff2819874a8700f74f8036eb7dcb6c6bc9e557bc7d3bacc55"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

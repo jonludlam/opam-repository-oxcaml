@@ -17,6 +17,7 @@ depends: [
   "incremental" {= "v0.18~preview.130.91+190"}
   "ppx_jane"    {= "v0.18~preview.130.91+190"}
   "dune"        {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Handling of large set of incremental outputs from a single input"
@@ -34,4 +35,3 @@ url {
   checksum:
     "sha256=c456891b31fe7f5106a7ba3874d92706b8e0c024d1a83bd0587d6ca04c4d30de"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

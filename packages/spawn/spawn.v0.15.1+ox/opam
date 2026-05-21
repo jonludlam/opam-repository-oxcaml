@@ -30,6 +30,7 @@ depends: [
   "ppx_expect" {with-test}
   "ocaml"      {>= "4.05"}
   "odoc"       {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

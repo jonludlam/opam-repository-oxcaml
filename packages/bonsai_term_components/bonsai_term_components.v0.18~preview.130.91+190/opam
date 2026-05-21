@@ -24,6 +24,7 @@ depends: [
   "vec"             {= "v0.18~preview.130.91+190"}
   "dune"            {>= "3.17.0"}
   "react"
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A set of Terminal UI (TUI) component libraries for bonsai_term."
@@ -36,4 +37,3 @@ url {
   checksum:
     "sha256=113a32edfb55d9175e267062a7a4aef273c91b9835efb350bd63db1f3233dfa2"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

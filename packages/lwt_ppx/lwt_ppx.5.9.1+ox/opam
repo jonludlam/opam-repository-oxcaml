@@ -18,6 +18,7 @@ depends: [
   "ppx_let" {with-test}
   "lwt"     {>= "5.7.0" & < "6~"}
   "odoc"    {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

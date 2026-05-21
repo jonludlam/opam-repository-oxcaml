@@ -22,6 +22,7 @@ depends: [
   "cohttp-async" {>= "2.5.7" & < "3.0.0" | >= "5.1.1" & < "6.0.0"}
   "dune"         {>= "3.17.0"}
   "uri"          {>= "3.0.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Tracing library"
@@ -34,4 +35,3 @@ url {
   checksum:
     "sha256=878a3f776459d398857d7e0e287fb25b1fa5bba2d30102512e59b6cc42f2dac1"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

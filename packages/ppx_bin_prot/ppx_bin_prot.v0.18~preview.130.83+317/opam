@@ -20,6 +20,7 @@ depends: [
   "dune"                {>= "3.17.0"}
   "ocaml-compiler-libs" {>= "v0.17.0"}
   "ppxlib"              {>= "0.33.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Generation of bin_prot readers and writers from types"
@@ -32,4 +33,3 @@ url {
   checksum:
     "sha256=84943e31988f0825a106c01ccd9320f57c42b28c6258e55331e082120680bc1d"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

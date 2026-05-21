@@ -17,6 +17,7 @@ depends: [
   "ppx_jane"           {= "v0.18~preview.130.91+190"}
   "ppx_stable_witness" {= "v0.18~preview.130.91+190"}
   "dune"               {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Protocol versioning"
@@ -32,4 +33,3 @@ url {
   checksum:
     "sha256=2dc657975588623cb57cb53258a49412bfd0267b17deed0ff9cb284e4b3d0483"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

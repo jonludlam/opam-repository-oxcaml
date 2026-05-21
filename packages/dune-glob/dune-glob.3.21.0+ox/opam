@@ -17,6 +17,7 @@ depends: [
   "re"
   "ordering" {= version}
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

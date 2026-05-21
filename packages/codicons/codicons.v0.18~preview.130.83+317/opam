@@ -16,6 +16,7 @@ depends: [
   "ppx_jane"              {= "v0.18~preview.130.83+317"}
   "virtual_dom"           {= "v0.18~preview.130.83+317"}
   "dune"                  {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Icons from VS code"
@@ -28,4 +29,3 @@ url {
   checksum:
     "sha256=196441e04b013060c04ab5e8b6cccaca5c59811f7f2a45202900e15bc657877b"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

@@ -16,6 +16,7 @@ depends: [
   "hardcaml" {= "v0.18~preview.130.83+317"}
   "ppx_jane" {= "v0.18~preview.130.83+317"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Hardcaml fixed point arithmetic"
@@ -29,4 +30,3 @@ url {
   checksum:
     "sha256=f6c6b9197133cea17cb77369ec9fc65a45ef0c1402b92236a70f3debb4af425e"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

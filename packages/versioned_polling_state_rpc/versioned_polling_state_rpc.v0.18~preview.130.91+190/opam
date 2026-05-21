@@ -20,6 +20,7 @@ depends: [
   "polling_state_rpc" {= "v0.18~preview.130.91+190"}
   "ppx_jane"          {= "v0.18~preview.130.91+190"}
   "dune"              {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=f606116b4eeb49709bcc3fa3651103878e7ff6efb93173165bee1293a8fc4b37"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

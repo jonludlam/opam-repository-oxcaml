@@ -16,6 +16,7 @@ depends: [
   "base"     {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library with an encoding of higher kinded types in OCaml"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=abb988c4f32a9abfddd638d959c16b5cd093304fe9aa92fde35b026abd405446"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

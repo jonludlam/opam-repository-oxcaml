@@ -15,6 +15,7 @@ depends: [
   "ocaml" {>= "5.1.0"}
   "base"  {= "v0.18~preview.130.91+190"}
   "dune"  {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Interface shared by Re_parser and Re2.Parser"
@@ -26,4 +27,3 @@ url {
   checksum:
     "sha256=45d94fa1250ebfaad14a22f3d055b38adfeb0a8e4598b7cf31acd6e946a86fcc"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

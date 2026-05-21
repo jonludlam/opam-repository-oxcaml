@@ -18,6 +18,7 @@ depends: [
   "stored_reversed" {= "v0.18~preview.130.91+190"}
   "streamable"      {= "v0.18~preview.130.91+190"}
   "dune"            {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An interface for diffs."
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=260f4b13a7d25d506dc0fb58e041bea6f96ddde8cd6e9343044515c7647ec463"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -14,6 +14,7 @@ depends: [
   "ocaml"  {>= "5.1.0"}
   "dune"   {>= "3.17.0"}
   "yojson" {>= "1.7.0" & < "3.0.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Runtime lib for ppx_yojson_conv"
@@ -26,4 +27,3 @@ url {
   checksum:
     "sha256=187b10ec22bc03052d7bef072829a893698853f1656696ff9740195ff3bcf78f"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

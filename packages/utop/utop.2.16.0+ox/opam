@@ -26,6 +26,7 @@ depends: [
   "alcotest"     {with-test}
   "xdg"          {>= "3.9.0"}
   "odoc"         {with-doc}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -48,6 +49,3 @@ url {
   checksum:
     "sha256=dff3e14b4d99d48757d7e886f69450e802cae5d8d54fd0681631230e71e42953"
 }
-conflicts: [
-  "oxcaml-compiler" {> "5.2.0minus25"}
-]

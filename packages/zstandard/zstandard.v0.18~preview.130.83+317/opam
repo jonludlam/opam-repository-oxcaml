@@ -19,6 +19,7 @@ depends: [
   "ctypes"      {>= "0.23.0"}
   "dune"        {>= "3.17.0"}
   "integers"
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 synopsis: "OCaml bindings to Zstandard"
 description: """
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=762d4df5c3c6fd70829754607769334cb3b12e95cf02c43791051e8dc9c1f52e"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

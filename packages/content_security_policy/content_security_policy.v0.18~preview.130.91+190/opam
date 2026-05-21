@@ -18,6 +18,7 @@ depends: [
   "base64"    {>= "3.4.0"}
   "cryptokit" {>= "1.16" & < "1.17"}
   "dune"      {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for building content-security policies"
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=18f87d9cb6fc6caedeaed428b85f18c953eb9ef9636553c56441fa94544c55a4"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

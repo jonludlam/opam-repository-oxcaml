@@ -16,6 +16,7 @@ depends: [
   "jsonaf"        {= "v0.18~preview.130.83+317"}
   "ppx_jane"      {= "v0.18~preview.130.83+317"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A friendly applicative interface for Jsonaf."
@@ -28,4 +29,3 @@ url {
   checksum:
     "sha256=1310ab9054565992ac9a797b2cbee974f80d779661c1faa12c97308653edcc1a"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

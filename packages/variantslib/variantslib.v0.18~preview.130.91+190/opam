@@ -15,6 +15,7 @@ depends: [
   "ocaml" {>= "5.1.0"}
   "base"  {= "v0.18~preview.130.91+190"}
   "dune"  {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Part of Jane Street's Core library"
@@ -29,4 +30,3 @@ url {
   checksum:
     "sha256=22684ad23c188bdfafc70f85b3227eb9d461988da8030cf2edfb7773d6e3ae4f"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

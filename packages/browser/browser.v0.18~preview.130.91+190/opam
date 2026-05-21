@@ -15,6 +15,7 @@ depends: [
   "dune"            {>= "3.17.0"}
   "js_of_ocaml"     {>= "6.0.1"}
   "js_of_ocaml-ppx" {>= "6.0.1"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library containing bindings to web APIs"
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=adda8cec30be76987886cac24d9ddcbd53689300756460273dbe746b95da27bd"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

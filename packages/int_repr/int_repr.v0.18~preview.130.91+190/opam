@@ -15,6 +15,7 @@ depends: [
   "base"     {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Integers of various widths"
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=69fc3e6a7a2f238a8d13fb1ef0e18cb13d260fc7807f01e53abc204b621c5be4"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

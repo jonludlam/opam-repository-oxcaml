@@ -18,6 +18,7 @@ depends: [
   "sexplib"            {= "v0.18~preview.130.83+317"}
   "dune"               {>= "3.17.0"}
   "xmlm"               {>= "1.4.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for representing XML documents based on XMLM."
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=55746b957d6f415e4a0aa596137459b94b01c2d93ccb36982238b30a4f7be7e1"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

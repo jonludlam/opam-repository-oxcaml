@@ -24,6 +24,7 @@ depends: [
   "streamable"         {= "v0.18~preview.130.91+190"}
   "uopt"               {= "v0.18~preview.130.91+190"}
   "dune"               {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Helpers for incremental operations on map like data structures"
@@ -39,4 +40,3 @@ url {
   checksum:
     "sha256=3c68e7b3cd1258abf1a0b62c51da95b7652b0ef5380d5e94e7170956d2624d0d"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

@@ -25,6 +25,7 @@ depends: [
   "ppx_expect"             {= "v0.18~preview.130.91+190"}
   "ppx_jane"               {= "v0.18~preview.130.91+190"}
   "dune"                   {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Some examples for bonsai_term"
@@ -40,4 +41,3 @@ url {
   checksum:
     "sha256=8392605467413efdce78bff80367c73d258d6264530a905f1690980d204738c1"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

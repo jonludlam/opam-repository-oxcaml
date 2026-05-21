@@ -24,6 +24,7 @@ depends: [
   "dune"            {>= "3.17.0"}
   "js_of_ocaml"     {>= "6.0.1"}
   "js_of_ocaml-ppx" {>= "6.0.1"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for building dynamic webapps, using Js_of_ocaml"
@@ -54,4 +55,3 @@ url {
   checksum:
     "sha256=d5efd666e77b216aa21f9e21cd201c7582e3174489117f19fde7caec4599e190"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

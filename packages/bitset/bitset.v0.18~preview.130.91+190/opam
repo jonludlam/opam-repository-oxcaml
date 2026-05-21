@@ -17,6 +17,7 @@ depends: [
   "ppx_jane"                {= "v0.18~preview.130.91+190"}
   "unboxed"                 {= "v0.18~preview.130.91+190"}
   "dune"                    {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for flat bitsets"
@@ -29,4 +30,3 @@ url {
   checksum:
     "sha256=d70a97615c87cf5acc4739a1c28eee494f502050f4b3581d106d307cfd59a7f1"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

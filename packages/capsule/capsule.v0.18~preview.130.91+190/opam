@@ -17,6 +17,7 @@ depends: [
   "ppx_sexp_conv" {= "v0.18~preview.130.91+190"}
   "ppx_template"  {= "v0.18~preview.130.91+190"}
   "dune"          {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "The capsule api for the OxCaml mode ecosystem"
@@ -32,4 +33,3 @@ url {
   checksum:
     "sha256=11665d0683bc9ff4385aa62c3b298bdcbcfc5b425f31fd44c9bd90b290cd50d4"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

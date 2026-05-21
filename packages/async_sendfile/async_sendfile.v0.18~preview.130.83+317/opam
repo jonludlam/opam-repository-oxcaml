@@ -18,6 +18,7 @@ depends: [
   "core_unix"    {= "v0.18~preview.130.83+317"}
   "ppx_jane"     {= "v0.18~preview.130.83+317"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Thin wrapper around [Linux_ext.sendfile] to send full files"
@@ -29,4 +30,3 @@ url {
   checksum:
     "sha256=c224b2fdb024c3e329394d541b004a7ffc4a00c2c883c039386ed66d91665f96"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

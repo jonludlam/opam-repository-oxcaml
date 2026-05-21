@@ -23,6 +23,7 @@ depends: [
   "ppx_jsonaf_conv" {= "v0.18~preview.130.83+317"}
   "stdio"           {= "v0.18~preview.130.83+317"}
   "dune"            {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Convert Verilog to a Hardcaml design"
@@ -39,4 +40,3 @@ url {
   checksum:
     "sha256=275b334e54a50f29ddbed89d1f875d3c61486749294f08657c50c5b6e1be80c5"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

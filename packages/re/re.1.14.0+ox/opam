@@ -29,6 +29,7 @@ depends: [
   "js_of_ocaml" {with-test}
   "conf-npm"    {with-test}
   "odoc"        {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

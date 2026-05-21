@@ -26,6 +26,7 @@ depends: [
   "dune"            {>= "3.17.0"}
   "notty-community" {>= "0.2.4"}
   "re"              {>= "1.14.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A terminal based digital waveform viewer for Hardcaml"
@@ -39,7 +40,6 @@ to simulations.
 """
 conflicts: [
   "hardcaml-waveterm"
-  "oxcaml-compiler" {< "5.2.0minus31"}
 ]
 url {
   src:

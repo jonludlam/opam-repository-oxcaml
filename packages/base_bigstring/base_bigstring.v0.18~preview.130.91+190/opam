@@ -18,6 +18,7 @@ depends: [
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "sexplib"  {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "String type based on [Bigarray], for use in I/O and C-bindings"
@@ -30,4 +31,3 @@ url {
   checksum:
     "sha256=6f790efd1dae2ec4c5dff5a83e358b35ebf0b1dd8a063cd32cc583d461de5eaf"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

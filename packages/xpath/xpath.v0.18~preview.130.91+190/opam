@@ -17,6 +17,7 @@ depends: [
   "simple_xml" {= "v0.18~preview.130.91+190"}
   "angstrom"   {>= "0.15.0"}
   "dune"       {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for dealing with XPath 1.0."
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=6d87219f5fb4c4a48a9ad13dade72875cb8cd8101c3da0ae7e7fe115eade6836"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

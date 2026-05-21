@@ -21,6 +21,7 @@ depends: [
   "ppx_hardcaml"             {= "v0.18~preview.130.91+190"}
   "ppx_jane"                 {= "v0.18~preview.130.91+190"}
   "dune"                     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A standardized test harness for Hardcaml"
@@ -35,4 +36,3 @@ url {
   checksum:
     "sha256=bc29968df8f051622466719598a6ea116b7f2b7069e11d81a5323b9146c5c66a"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

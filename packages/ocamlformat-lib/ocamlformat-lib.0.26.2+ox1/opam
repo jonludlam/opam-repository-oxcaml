@@ -43,6 +43,7 @@ depends: [
   "result"
   "camlp-streams"
   "odoc"                {with-doc}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -64,6 +65,3 @@ url {
   src:
     "git+https://github.com/oxcaml/ocamlformat.git#with-extensions-minus-31"
 }
-conflicts: [
-  "oxcaml-compiler" {< "5.2.0minus31"}
-]

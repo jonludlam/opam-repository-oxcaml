@@ -19,6 +19,7 @@ depends: [
   "hardcaml_waveterm" {= "v0.18~preview.130.91+190"}
   "ppx_jane"          {= "v0.18~preview.130.91+190"}
   "dune"              {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Hardcaml Event Driven Simulator"
@@ -36,4 +37,3 @@ url {
   checksum:
     "sha256=227e3153dc65e11682aeda537eb99b3b5f176c9f073775129673111fbfde15b3"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

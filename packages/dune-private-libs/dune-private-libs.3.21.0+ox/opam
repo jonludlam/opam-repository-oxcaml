@@ -25,6 +25,7 @@ depends: [
   "stdune" {= version}
   "ocaml" {>= "4.08"}
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

@@ -32,6 +32,7 @@ depends: [
   "ocamlformat-rpc-lib" {with-test & = version}
   "re"                  {>= "1.10.3"}
   "odoc"                {with-doc}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -53,6 +54,3 @@ url {
   src:
     "git+https://github.com/oxcaml/ocamlformat.git#with-extensions-minus-31"
 }
-conflicts: [
-  "oxcaml-compiler" {< "5.2.0minus31"}
-]

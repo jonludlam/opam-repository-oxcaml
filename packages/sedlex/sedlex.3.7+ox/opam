@@ -21,6 +21,7 @@ depends: [
   "gen"
   "ppx_expect" {with-test}
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

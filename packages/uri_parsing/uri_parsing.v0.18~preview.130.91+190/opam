@@ -25,6 +25,7 @@ depends: [
   "ppxlib"           {>= "0.33.0"}
   "re"               {>= "1.14.0"}
   "uri"              {>= "3.0.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -38,4 +39,3 @@ url {
   checksum:
     "sha256=84c5bce5d721041ad6575cc4b77d364a775ca9122e897a3d51656afd5d3b18ce"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

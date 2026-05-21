@@ -21,6 +21,7 @@ depends: [
   "ocaml" {>= "4.02.3"}
   "seq" {>= "0.2.2"}
   "odoc" {with-doc}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -52,7 +53,4 @@ extra-files: [
     "oxcaml-yojson.patch"
     "sha256=368596133ceb1bbc23e034ce474f2954bf4329e61dbc60446a24ce23750f18aa"
   ]
-]
-conflicts: [
-  "oxcaml-compiler" {< "5.2.0minus31"}
 ]

@@ -53,6 +53,7 @@ depends: [
   "js_of_ocaml-ppx"          {>= "6.0.1"}
   "re"                       {>= "1.14.0"}
   "uri"                      {>= "3.0.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -68,4 +69,3 @@ url {
   checksum:
     "sha256=d0668f528132d897f327a74e62857f81f0b336a36c32e9ef1688eb23516b8ce1"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

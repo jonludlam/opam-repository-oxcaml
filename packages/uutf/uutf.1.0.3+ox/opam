@@ -30,6 +30,7 @@ depends: [
   "ocamlbuild" {build}
   "topkg"      {build & >= "1.0.3"}
   "cmdliner"
+  "oxcaml-compiler"
 ]
 depopts: ["cmdliner"]
 conflicts: [

@@ -21,6 +21,7 @@ depends: [
   "dune"               {>= "3.17.0"}
   "num"
   "zarith"             {>= "1.12"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -33,4 +34,3 @@ url {
   checksum:
     "sha256=3720651e03622f63876fee6444effde5fdcd5a457f65e06d82080aff78fdfa6c"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

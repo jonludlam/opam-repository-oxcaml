@@ -18,6 +18,7 @@ depends: [
   "eio_posix" {= version & os != "win32"}
   "eio_windows" {= version & os = "win32"}
   "odoc" {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   [

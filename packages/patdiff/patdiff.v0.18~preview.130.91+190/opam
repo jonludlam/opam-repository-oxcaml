@@ -24,6 +24,7 @@ depends: [
   "dune"                     {>= "3.17.0"}
   "re"                       {>= "1.14.0"}
   "uucp"
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "File Diff using the Patience Diff algorithm"
@@ -35,4 +36,3 @@ url {
   checksum:
     "sha256=e06e5936aa5a2b3392b0b727c902a291f271e9351337d019467205907aadd0f3"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

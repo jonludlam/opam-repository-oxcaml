@@ -14,6 +14,7 @@ depends: [
   "ocaml"        {>= "4.11.0"}
   "base-threads"
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Streaming client for Memprof"
@@ -26,4 +27,3 @@ url {
   checksum:
     "sha256=09b381008007cd66a59faf1eea831e94d1403b77f62e1dfdf199b3527adaef68"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

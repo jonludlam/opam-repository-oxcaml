@@ -20,11 +20,11 @@ depends: [
   "conf-jq"           {with-test}
   "ppxlib"            {with-test}
   "alcotest"          {with-test}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 conflicts: [
   "seq" {!= "base"}
   "base-effects"
-  "oxcaml-compiler" {> "5.2.0minus25"}
 ]
 build: [
   ["dune" "subst"] {dev}

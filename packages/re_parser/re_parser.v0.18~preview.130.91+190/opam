@@ -17,6 +17,7 @@ depends: [
   "regex_parser_intf" {= "v0.18~preview.130.91+190"}
   "dune"              {>= "3.17.0"}
   "re"                {>= "1.14.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Typed parsing using regular expressions."
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=38d04635f76437230a4df7c551bb8599075f705534c1276bca801ac85f42e337"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

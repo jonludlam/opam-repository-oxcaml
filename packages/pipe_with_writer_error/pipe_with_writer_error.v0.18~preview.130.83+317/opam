@@ -16,6 +16,7 @@ depends: [
   "core"         {= "v0.18~preview.130.83+317"}
   "ppx_jane"     {= "v0.18~preview.130.83+317"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis:
@@ -40,4 +41,3 @@ url {
   checksum:
     "sha256=19b528f2c71d830e9b46d469f52101ffb28d0e06216799ecff7950c8e8fb697d"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

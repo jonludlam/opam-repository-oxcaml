@@ -13,6 +13,7 @@ depends: [
   "alcotest"     {>= "1.7.0" & with-test}
   "domain_shims" {>= "0.1.0" & with-test}
   "odoc"         {with-doc}
+  "oxcaml-compiler"
 ]
 build: [
   ["dune" "subst"] {dev}

@@ -24,6 +24,7 @@ depends: [
   "dune"             {>= "3.17.0"}
   "httpaf"           {>= "0.7.1"}
   "jingoo"           {>= "1.4.4" & < "1.5.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An OpenAPI 3 to OCaml client generator."
@@ -36,4 +37,3 @@ url {
   checksum:
     "sha256=12bd2f8d7679eaa0a7f1fd856fc2a47977e935b0ea59cf781029a904fd49c75c"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

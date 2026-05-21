@@ -22,6 +22,7 @@ depends: [
   "stdio"                     {= "v0.18~preview.130.91+190"}
   "unique"                    {= "v0.18~preview.130.91+190"}
   "dune"                      {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Hardcaml Testbench Monad"
@@ -37,4 +38,3 @@ url {
   checksum:
     "sha256=5d34db549d5eccf7ebf7e8ef03434624b7172a5c624b540ba59fdeb0b8d6f61e"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

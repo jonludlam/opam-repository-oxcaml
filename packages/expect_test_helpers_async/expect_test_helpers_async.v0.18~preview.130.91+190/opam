@@ -20,6 +20,7 @@ depends: [
   "ppx_jane"                 {= "v0.18~preview.130.91+190"}
   "sexp_pretty"              {= "v0.18~preview.130.91+190"}
   "dune"                     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Async helpers for writing expectation tests"
@@ -35,4 +36,3 @@ url {
   checksum:
     "sha256=be4b19d4a6abbcb1d5011ec8a373cd981af99d98cba4d9ed55afba160d0155da"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

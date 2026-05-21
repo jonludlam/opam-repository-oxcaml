@@ -19,6 +19,7 @@ depends: [
   "ppx_jane"                 {= "v0.18~preview.130.83+317"}
   "ppx_stable_witness"       {= "v0.18~preview.130.83+317"}
   "dune"                     {>= "3.17.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Trie data structure library"
@@ -34,4 +35,3 @@ url {
   checksum:
     "sha256=24f7d91cee004bb08e9e4cfa0f760cc906f06eb4b3efb4d3c660902f92d12776"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

@@ -25,6 +25,7 @@ depends: [
   "dune"              {>= "3.17.0"}
   "dune-configurator"
   "integers"
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "An Async-pipe-based interface with OpenSSL"
@@ -38,4 +39,3 @@ url {
   checksum:
     "sha256=69bf609aac16d43721a452943cb261ab21ed2bb2315996c523692da830559a92"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

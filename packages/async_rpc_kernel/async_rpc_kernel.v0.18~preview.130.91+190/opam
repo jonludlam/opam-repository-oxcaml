@@ -24,6 +24,7 @@ depends: [
   "protocol_version_header" {= "v0.18~preview.130.91+190"}
   "sexplib"                 {= "v0.18~preview.130.91+190"}
   "dune"                    {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Platform-independent core of Async RPC library"
@@ -39,4 +40,3 @@ url {
   checksum:
     "sha256=3c55a6c4770840d419426f6a76cfe1674a923572cab925f46c2cc5a558cbaeab"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

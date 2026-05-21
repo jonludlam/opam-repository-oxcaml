@@ -18,6 +18,7 @@ depends: [
   "ppx_base"            {= "v0.18~preview.130.91+190"}
   "ppx_optcomp"         {= "v0.18~preview.130.91+190"}
   "dune"                {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Reports the current time"
@@ -31,4 +32,3 @@ url {
   checksum:
     "sha256=58548e8d2eea8cdfe9f98ec40ae5f946101c9fdc5b977e45a537e4984d072fdf"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

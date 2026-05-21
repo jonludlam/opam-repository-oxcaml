@@ -28,6 +28,7 @@ depends: [
   "ppx_jane"                 {= "v0.18~preview.130.91+190"}
   "dune"                     {>= "3.17.0"}
   "zarith"                   {>= "1.12"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Hardcaml computation DSL."
@@ -43,4 +44,3 @@ url {
   checksum:
     "sha256=3f5bce6ad2b5a1017706c9ac0b8c36b76e24cfc9878b52af7a662e57515c118a"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

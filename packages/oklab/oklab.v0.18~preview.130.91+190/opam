@@ -15,6 +15,7 @@ depends: [
   "base"     {= "v0.18~preview.130.91+190"}
   "ppx_jane" {= "v0.18~preview.130.91+190"}
   "dune"     {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for the oklab color space"
@@ -27,4 +28,3 @@ url {
   checksum:
     "sha256=37798f808b83be09078ad6e5b6365210435636e6ac45d60f67b16c40291801df"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

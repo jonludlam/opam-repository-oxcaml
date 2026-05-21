@@ -22,6 +22,7 @@ depends: [
   "time_now"    {= "v0.18~preview.130.91+190"}
   "virtual_dom" {= "v0.18~preview.130.91+190"}
   "dune"        {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "Shared dependencies of bonsai and incr_dom."
@@ -41,4 +42,3 @@ url {
   checksum:
     "sha256=3138162b1e15554905b590d3aa4d82c0e8f95f472efd3951ee4269290b4ff51c"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

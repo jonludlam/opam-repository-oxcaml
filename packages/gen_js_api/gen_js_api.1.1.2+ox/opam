@@ -26,6 +26,7 @@ depends: [
   "ojs"                  {= version}
 "ppxlib_jane"
   "odoc"                 {with-doc}
+  "oxcaml-compiler"
 ]
 conflicts: [
   "js_of_ocaml-compiler" {< "4.0.0"}

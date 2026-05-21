@@ -26,6 +26,7 @@ depends: [
   "alcotest"     {with-test}
   "xdg"          {>= "3.9.0"}
   "odoc"         {with-doc}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 build: [
   ["dune" "subst"] {dev}
@@ -45,6 +46,3 @@ dev-repo: "git+https://github.com/ocaml-community/utop.git"
 url {
   src: "git+https://github.com/oxcaml/utop.git#5.2.0minus-31"
 }
-conflicts: [
-  "oxcaml-compiler" {< "5.2.0minus31"}
-]

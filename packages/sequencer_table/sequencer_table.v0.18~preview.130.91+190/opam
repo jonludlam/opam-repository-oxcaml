@@ -17,6 +17,7 @@ depends: [
   "core"         {= "v0.18~preview.130.91+190"}
   "ppx_jane"     {= "v0.18~preview.130.91+190"}
   "dune"         {>= "3.17.0"}
+  "oxcaml-compiler" {>= "5.2.0minus31"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A table of [Async.Sequencer]'s, indexed by key"
@@ -29,4 +30,3 @@ url {
   checksum:
     "sha256=62a6e87cb3856ad96d8f12c12609c31deb4166394896d178aacadbeded0686dc"
 }
-conflicts: "oxcaml-compiler" {< "5.2.0minus31"}

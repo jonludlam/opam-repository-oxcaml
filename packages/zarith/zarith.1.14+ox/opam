@@ -43,6 +43,7 @@ depends: [
   "ocaml-variants"     {>= "4.07.0"}
   "ocamlfind"
   "conf-gmp"
+  "oxcaml-compiler"
 ]
 synopsis:
   "Implements arithmetic and logical operations over arbitrary-precision integers"

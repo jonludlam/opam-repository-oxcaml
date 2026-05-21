@@ -28,6 +28,7 @@ depends: [
   "dune"                     {>= "3.17.0"}
   "notty-community"          {>= "0.2.4"}
   "re"                       {>= "1.14.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for building dynamic terminal apps, using bonsai"
@@ -41,4 +42,3 @@ url {
   checksum:
     "sha256=b4778240127faa6e6033e81170b85cd24e68a113d606c69cfc8b79e224e2f91c"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}

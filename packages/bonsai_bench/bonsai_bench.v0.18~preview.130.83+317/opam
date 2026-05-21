@@ -26,6 +26,7 @@ depends: [
   "dune"             {>= "3.17.0"}
   "js_of_ocaml-ppx"  {>= "6.0.1"}
   "uri"              {>= "3.0.0"}
+  "oxcaml-compiler" {<= "5.2.0minus25"}
 ]
 available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for benchmarking bonsai web applications"
@@ -40,4 +41,3 @@ url {
   checksum:
     "sha256=6cd7d881eee203c86a1a141250cbb1bbab627de2dc3081030cba075aa2d93d12"
 }
-conflicts: "oxcaml-compiler" {> "5.2.0minus25"}
